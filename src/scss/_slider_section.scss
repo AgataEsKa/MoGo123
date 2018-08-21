@@ -1,0 +1,17 @@
+#slider {
+  min-height: 200px;
+  background: #f8f8f8;
+  .slick_item{
+    padding:24px;
+  }
+  .slider_text{
+    color:#999999;
+  }
+
+  .slick-next:before {
+    content:url('../img/icons/arrow_right.png');
+  }
+  .slick-prev:before {
+    content:url('../img/icons/arrow_left.png');
+  }
+}

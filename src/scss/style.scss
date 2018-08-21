@@ -8,5 +8,17 @@
 //Custom styles
 @import "custom/navbar";
 
+
+//Slick
+@import "slick/slick";
+@import "slick/slick-theme";
+
+//fontawesome
+@import "fontawesome/font-awesome";
+
+
 //Sections
 @import "top_section";
+@import "story_section";
+@import "service_section";
+@import "slider_section";

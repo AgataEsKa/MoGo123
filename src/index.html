@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>MoGo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akonsult</title>
   <!-- build:css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- endbuild -->
@@ -10,20 +11,20 @@
 <body>
 
 
-<section id="top">
-
-  <nav class="navbar navbar-expand-lg navbar-light">
+<section class="section" id="top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">MoGo</a>
+      <a class="navbar-brand" href="#">Akonsult<sup>&reg;</sup></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link" href="#">Disabled</a>
-          <a class="nav-item nav-link" href="#">Disabled</a>
+          <a class="nav-item nav-link active" href="#top">O nas</a>
+          <a class="nav-item nav-link" href="#story">Historia</a>
+          <a class="nav-item nav-link" href="#service">Usługi</a>
+          <a class="nav-item nav-link" href="#slider">slider</a>
+          <a class="nav-item nav-link" href="#team">Zespół</a>
         </div>
       </div>
     </div>
@@ -31,12 +32,12 @@
   <div class="loader"></div>
   <header class="top-header">
     <h1 class="text-center">
-      <span class="kaushan-script-font d-block" id="top-header__pre-title">Creative Template</span>
-      <span class="montserrat-font bold text-huge text-uppercase d-block" id="top-header__title">Welcome<br>to MoGo</span>
+      <span class="kaushan-script-font d-block" id="top-header__pre-title">Projekty</span>
+      <span class="montserrat-font bold text-huge text-uppercase d-block" id="top-header__title">Witaj<br>w Akonsult</span>
     </h1>
   </header>
   <div class="separator"></div>
-  <a href="#" class="button button-white button-center" id="top-header__link">Learn more</a>
+  <a href="#" class="button button-white button-center" id="top-header__link" data-accordion-open="accordion_button_1">Dowiedz się więcej</a>
   <p></p>
   <div class="container">
     <div class="row">
@@ -95,6 +96,377 @@
   </div>
 
 </section>
+
+
+<section class="section"  id="story">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <header>
+          <h1>
+            <span class="kaushan-script-font">Czym się zajmujemy</span><br>
+            <span class="montserrat-font bold text-uppercase">o firmie</span>
+          </h1>
+          <div class="div_center">
+            <div class="separator orange"></div>
+          </div>
+
+        </header>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <a href="#" target="_blank" class="tile_link">
+          <div class="background">
+            <div class="image" id="image_1" >
+              <div class="gradient">
+                <div class="gradient_content">
+                  <div class="gradient_content__inner">
+                    <img src="img/story_section/people_icon.png" alt="" class="img_center">
+                    Zespół
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+      <div class="col-4">
+        <a href="#" target="_blank" class="tile_link">
+          <div class="background">
+            <div class="image" id="image_2">
+              <div class="gradient">
+                <div class="gradient_content">
+                  <div class="gradient_content__inner">
+                    <img src="img/story_section/people_icon.png" alt="" class="img_center">
+                    Zespół
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="#" target="_blank" class="tile_link">
+          <div class="background">
+            <div class="image" id="image_3">
+              <div class="gradient">
+                <div class="gradient_content">
+                  <div class="gradient_content__inner">
+                    <img src="img/story_section/people_icon.png" alt="" class="img_center">
+                    Zespół
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+
+
+<section class="section"  id="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="service_images">
+          <div class="photography_image accordion_image">
+            <img src="https://placekitten.com/600/401" alt="misio">
+          </div>
+          <div class="creativity_image hidden accordion_image">
+            <img src="https://placekitten.com/600/400" alt="misio">
+          </div>
+          <div class="web_design_image hidden accordion_image">
+            <img src="https://placekitten.com/600/402" alt="misio">
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <img src="img/icons/photo_icon.png">
+              <h5 class="mb-0 d-inline-block">
+                <button id="accordion_button_1" class="btn btn-link accordion_title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Projekty oświetlenia drogowego
+                </button>
+              </h5>
+              <div class="accordion_arrow">
+                <img src="img/icons/accordion_arrow.png" alt="arrow">
+              </div>
+            </div>
+            <div id="collapseOne" class="collapse show card-body-wrapper" aria-labelledby="headingOne" data-parent="#accordion" data-image=".photography_image">
+              <div class="card-body">
+                Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <img src="img/icons/creativity_icon.png">
+              <h5 class="mb-0 d-inline-block">
+                <button id="accordion_button_2" class="btn btn-link collapsed accordion_title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Projekty odwodnienia
+                </button>
+              </h5>
+              <div class="accordion_arrow">
+                <img src="img/icons/accordion_arrow.png" alt="arrow">
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse card-body-wrapper" aria-labelledby="headingTwo" data-parent="#accordion" data-image=".web_design_image">
+              <div class="card-body">
+                Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <img src="img/icons/web_design_icon.png">
+              <h5 class="mb-0 d-inline-block">
+                <button id="accordion_button_3" class="btn btn-link collapsed accordion_title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  projekty gospodarki zielenią i drzewostanem w pasie drogowym
+                </button>
+              </h5>
+              <div class="accordion_arrow">
+                <img src="img/icons/accordion_arrow.png" alt="arrow">
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse card-body-wrapper" aria-labelledby="headingThree" data-parent="#accordion" data-image=".creativity_image">
+              <div class="card-body">
+                Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section"  id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="slick_slider">
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluj</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluj</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluj</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Jon Doe</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluje</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluj</div>
+
+              </div>
+            </div>
+          </div>
+          <div class="slick_item">
+            <div class="row">
+              <div class="col-2">
+                <img src="img/icons/slider_icon.png" alt="Slider icon">
+              </div>
+              <div class="col-10">
+                <p class="slider_text"><em>“Z naszych projektów zostały wybudowane liczne ulice i place i parkingi w Warszawie m.in.
+                  ul. Encyklopedyczna, Kaniowska, Czarnieckiego, parking na Pl. Inwalidów
+                  W Legionowie ul. Jana III Sobieskiego, w Wiązownie ul. Duchnowska,
+                  Droga powiatowa Dębe – Zegrze, Odcinki dróg wojewódzkich nr 631; 787; 807; 734
+                  Oraz wiele innych w Zielonce, Kobyłce, Klębowie, Wieliszewie, Izabelinie, Otwocku.”</em></p>
+                <div class="separator d-inline-block orange"></div>
+                <div class="d-inline-block kaushan-script-font">Adam Kluj</div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="section"  id="team">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <header>
+          <h1>Zespół</h1>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="tile_link">
+          <div class="background">
+            <div class="image tile_1">
+              <div class="gradient">
+                <img src="img/misio_1.jpg">
+                <div class="gradient_content">
+                  <div class="social_icons">
+                    <a href="https://facebook.com" target="_blank" class="fb icon d-inline-block"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="tt icon d-inline-block"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://pinterest.com" target="_blank" class="pin icon d-inline-block"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="insta icon d-inline-block"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <a href="#" target="_blank" class="tile_link">
+          <div class="background">
+            <div class="image tile_2">
+              <div class="gradient">
+                <img src="img/misio_1.jpg">
+                <div class="gradient_content">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+      <div class="col-4">
+        <a href="#" target="_blank" class="tile_link">
+          <div class="background">
+            <div class="image tile_3">
+              <div class="gradient">
+                <img src="img/misio_1.jpg">
+                <div class="gradient_content">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 <!-- build:js -->
 <script src="js/plugins.js"></script>

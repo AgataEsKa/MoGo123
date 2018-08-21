@@ -7,7 +7,7 @@
   color: #ffffff;
   .top-header {
     display: none;
-    padding: 50px 0 0;
+    padding: 100px 0 0;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -33,5 +33,29 @@
     .top-slider-number {
       font-size: 24px;
     }
+  }
+}
+
+.navbar.scrolled {
+  background-color: rgba(243, 129, 129, 1);
+  transition: all 0.2s ease;
+  height:70px;
+}
+
+.div_center{
+  .separator{
+    margin: 20px auto;
+  }
+
+}
+
+.section{
+  padding-top:50px;
+  padding-bottom:50px;
+  &:first-of-type{
+    padding-top:0;
+  }
+  &:last-of-type{
+    padding-bottom:0;
   }
 }

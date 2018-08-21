@@ -4,28 +4,32 @@
 
   let sliders = [
     {
-      pre_title: 'Creative Template 1',
-      title: 'Welcome to MoGo 1',
-      link_text: 'Learn more',
-      link_url: '#'
+      pre_title: 'Projekty oświetlenia drogowego',
+      title: 'Witaj w Akonsult 1',
+      link_text: 'Dowiedz się więcej',
+      link_url: '#service',
+      data_open: 'accordion_button_3'
     },
     {
-      pre_title: 'Creative Template 2',
-      title: 'Welcome to MoGo 2',
-      link_text: 'Learn more',
-      link_url: '#'
+      pre_title: 'Projekty odwodienia',
+      title: 'Witaj w Akonsult 2',
+      link_text: 'Dowiedz się więcej',
+      link_url: '#service',
+      data_open: 'accordion_button_2'
     },
     {
-      pre_title: 'Creative Template 3',
-      title: 'Welcome to MoGo 3',
-      link_text: 'Learn more',
-      link_url: '#'
+      pre_title: 'Projekty gospodarki zielenią i drzewostanem w pasie drogowym',
+      title: 'Witaj w Akonsult 3',
+      link_text: 'Dowiedz się więcej',
+      link_url: '#service',
+      data_open: 'accordion_button_1'
     },
     {
-      pre_title: 'Creative Template 4',
-      title: 'Welcome to MoGo 4',
-      link_text: 'Learn more',
-      link_url: '#'
+      pre_title: 'Projekty melioracji wodnych',
+      title: 'Witaj w Akonsult 4',
+      link_text: 'Dowiedz się więcej',
+      link_url: '#service',
+      data_open: 'accordion_button_3'
     }
   ];
 
@@ -68,14 +72,10 @@
     let current_url = current_slide.link_url;
     let current_link_text = current_slide.link_text;
 
-    //change slider texts
-
-
     $pre_title.text(current_pre_title);
     $title.text(current_title);
     $link.text(current_link_text);
     $link.attr("href", current_url);
-
 
     $sliders_wrappers.removeClass('active');
     $($sliders_wrappers[counter]).addClass('active');
@@ -94,9 +94,61 @@
                 switch_counter_and_rerun_slider(counter);
                 $top_header.fadeIn(300);
               });
-
         }
     );
   }
-})(jQuery, window);
 
+
+  //accordion
+  $('.collapse').on('hidden.bs.collapse', function () {
+    $(this).parent().find('.accordion_arrow').addClass('rotate');
+  });
+
+  $('.collapse').on('shown.bs.collapse', function () {
+
+    let imageClass = $(this).attr('data-image');
+
+    let image = $(imageClass);
+    let images = $('.accordion_image');
+    images.fadeOut(200);
+    image.fadeIn(200);
+
+    $(this).parent().find('.accordion_arrow').removeClass('rotate');
+
+  });
+
+
+  //slick slider initialize
+  $('.slick_slider').slick({
+    // dots: true,
+    arrows: true
+  });
+
+  $.fn.scrollToElement = function (top) {
+    if (!this.length) return this;
+    return this.each(function () {
+      let $this = $(this);
+      $this.on('click', function (event) {
+        event.preventDefault();
+        let href = $this.attr('href');
+        $('html, body').animate({
+          scrollTop: $(href).offset().top - top
+        }, 500);
+      })
+    });
+  };
+  let scrollElement = $('.nav-link, #top-header__link');
+  scrollElement.scrollToElement(70);
+
+  $(window).on('scroll', function () {
+    let scroll_top = $(window).scrollTop();
+    let navbar = $('.navbar');
+    if (scroll_top > 120) {
+      navbar.addClass('scrolled')
+    } else {
+      navbar.removeClass('scrolled')
+    }
+  })
+
+
+})(jQuery, window);
