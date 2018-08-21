@@ -1,7 +1,7 @@
 #story {
   padding: 100px 0;
   #image_1{
-    background-image: url("../img/story_section/img_1.jpg");
+    background-image: url("../img/misio_1.jpg");
   }
   #image_2{
     background-image: url("../img/story_section/img_2.jpg");
@@ -25,10 +25,10 @@
         background-image: url("../img/misio_1.jpg");
       }
       &.tile_2 {
-        background-image: url("../img/misio_2.jpg");
+        background-image: url("../img/misio_1.jpg");
       }
       &.tile_3 {
-        background-image: url("../img/misio_hipster.jpg");
+        background-image: url("../img/misio_1.jpg");
       }
       transition: all .2s ease;
       &:hover {
